@@ -1,0 +1,142 @@
+import React, { useState, useEffect } from 'react'
+import {useForm} from "react-hook-form"
+
+const InputForm = () => {
+
+  const {register, handleSubmit,   formState: { errors },} = useForm({mode:"onSubmit"}); 
+  // För att visa ett meddelande om rappotern har lyuckats eller inte.
+  const [resultMessage, SetResultMessage] = useState("");
+// Den här används för att visa meddelande om fordon såsom historik etc.
+  const [vehiclestatus, setVehicleStatus] = useState(null);
+
+// För att hämta användarens input på registrerings nummer.
+  const [carNum, setCarNum] = useState("");
+
+
+// ändrar registreingnummer till vehicleID
+  const fetchVehicleId = async (carNum) => {
+    try { /**Behöver ändra addressen beroende på adressen. */
+      const vehicleResponse = await fetch(`https://localhost:7060/api/Vehicle/${carNum}`);
+      const vehicleId = await vehicleResponse.json();
+      if (!vehicleId || vehicleId === 0) {
+        console.error("Reg.nr. finns inte");
+        setVehicleStatus("Reg.nr. finns inte");
+        return null;  
+      }
+      return vehicleId;
+    } catch (error) {
+      console.error("Error fetching vehicle ID:", error);
+      setVehicleStatus("Error fetching vehicle ID");
+      return null;  
+    }
+  };
+
+
+  const handleChange = (e) =>{
+    setCarNum(e.target.value);
+    setVehicleStatus("");    
+  }
+
+    // Hämta API för att visa rapporteringshistorik.
+  useEffect(() =>{
+    const fetchData = async () => {
+     if(carNum){
+try{
+  /**Behöver ändra addressen beroende på adressen. */
+  const vehicleId = await fetchVehicleId(carNum);
+  if (!vehicleId) return;
+  const response = await fetch(`https://localhost:7060/api/Report/${vehicleId}`)
+  const data = await response.json();
+  if(Array.isArray(data)  && data.length > 0){
+    data.forEach(report => {
+      const descriptions = data.map(report => report.reportDescription);
+     const reportedDates = data.map(report => report.reportedDate);
+     console.log(reportedDates);
+     reportedDates.forEach(dataString =>{
+      const datePart = dataString.split("T")[0];
+      console.log(datePart);
+     })
+   
+      console.log(descriptions);
+      const descritptionWithN =  descriptions.reverse().join("\n")
+      setVehicleStatus(descritptionWithN);
+    })
+  }else{
+    console.log("Ingen info.");
+    setVehicleStatus("Ingen info.");
+  }
+ 
+}catch(error){
+  setVehicleStatus("Could not fetch the car.");
+  console.error("Error to fetch data", error);
+}}
+    };
+    fetchData();
+    },[carNum]);
+
+    const onSubmit = async (data) => {
+      try {
+        const vehicleId = await fetchVehicleId(carNum);
+        if (!vehicleId) return;
+        data.vehicleId = vehicleId;
+        console.log(" ID: "+ vehicleId);
+        data.emergency = data.emergency === 'true';
+        data.reportedDate = new Date();
+        const response = await fetch('https://localhost:7060/api/Report', {
+          method: "POST",
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        console.log(data);
+        if (response.ok) {
+          console.log("Rapporterat");
+          SetResultMessage("Rapporterat!");
+        } else {
+          console.error("Kunde inte rapportera:", response.statusText);
+          SetResultMessage("Kunde inte rapportera.");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    };
+
+  
+  return (
+    <div >
+        <form onSubmit = {handleSubmit(onSubmit)}>
+            <label htmlFor="employeeId">AnvändarID</label>
+            <input id = "employeeId" type="text" name = "employeeId" {...register("employeeId", {required: "Ange använderid.", valueAsNumber: true})}/>
+            <p>{errors.employeeId?.message}</p>
+            <label htmlFor="registrationNumber">Registeringsnummer</label>
+            <input id= "registrationNumber" type="text" name = "registrationNumber" {...register("registrationNumber", {required: "Ange registrerings nummer."})}
+              value = {carNum} onChange = {(e) => handleChange(e)}/>
+              <p>{errors.registrationNumber?.message}</p> 
+            <label htmlFor="emergency">Akut</label>
+            <div className="radioButton">
+            <input id= "answer-ja" type="radio" value={true} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Ja
+            <input id= "answer-nej" type="radio" value={false} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Nej
+            </div>
+            <p>{errors.emergency?.message}</p>
+            <label htmlFor="reportDescription">Fel</label>
+            <textarea name="reportDescription" id="" placeholder="Ange text" {...register("reportDescription", {required: "Ange text"})}></textarea>
+            <p>{errors.reportDescription?.message}</p>
+            
+            <button type="submit" className="submitBtn">Submit</button>
+            <p className="result">{resultMessage}</p>
+            <label htmlFor="status">Historik</label>
+            {vehiclestatus?  /*(<p className="carstatus">{vehiclestatus}</p>):*/
+             (
+              vehiclestatus.split('\n').map((line, index) => (
+                <p key={index}>{line}</p>
+              ))
+            ) : ( <p className="carstatus"></p>)}
+        
+
+          
+        </form>
+
+    </div>
+  )
+}
+
+export default InputForm
