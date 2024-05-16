@@ -21,9 +21,9 @@ Vad användare gör med appen:
 ## Planering
 Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del projektet på det befintliga systemet, skriver jag här som om jag redan har en god insikt och förståelse för det befintliga systemet.
      
-1. Tydliggöra målet och syftet
+1. Tydliggöra målet och syftet  
 Innan jag börjar att bygga appen, behöver jag förstå vad appen ska användas till. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla  tankar och idéer. Sen listas tankar och planer grovt.
-2. Träffa testpersonerna för att veta krav och förväntningar
+2. Träffa testpersonerna för att veta krav och förväntningar  
 Behöver veta konkreta behov och förväntningar från testpersonerna, både vad de vill ha och vad de inte vill ha.
 
 Nedan är frågor som ställdes till testpersonerna:
@@ -36,7 +36,7 @@ Nedan är frågor som ställdes till testpersonerna:
 - Hur mycket information de vill kunna se i historiken  
 	Avgöra vad som är lagom mycket information, så det inte blir onödigt mycket.
  
-3. Plan enligt svar från testpersoner/ Lista vad som behöver göras
+3. Plan enligt svar från testpersoner/ Lista vad som behöver göras  
 
 - Funktion att ladda upp bild/video
 - Visa vilka fel har rapporterats tidigare för att kunna slippa rapportera samma fel igen.
@@ -53,10 +53,10 @@ Nedan är frågor som ställdes till testpersonerna:
   	- Ladda upp bild
   	- Akut ja/nej, radio button
   	- Submit-button  
-4. Kontakta leverantören
+4. Kontakta leverantören  
 Frågor till leverantören är för att kunna veta struktur och funktioner i appen. Vilket språk/API/platform används, 
 
-5. Stämma av med projektledare innan arbetet påbörjas
+5. Stämma av med projektledare innan arbetet påbörjas  
 Visa planen så här långt så att vi är överens om att jag är på rätt spår.
 
 
