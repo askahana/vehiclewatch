@@ -50,13 +50,8 @@ try{
   if(Array.isArray(data)  && data.length > 0){
     data.forEach(report => {
       const descriptions = data.map(report => report.reportDescription);
-     const reportedDates = data.map(report => report.reportedDate);
-     console.log(reportedDates);
-     reportedDates.forEach(dataString =>{
-      const datePart = dataString.split("T")[0];
-      console.log(datePart);
-     })
-   
+     const reportedDates = data.map(report => {const date = new Date(report.reportedDate)});
+  
       console.log(descriptions);
       const descritptionWithN =  descriptions.reverse().join("\n")
       setVehicleStatus(descritptionWithN);
@@ -113,8 +108,8 @@ try{
               <p>{errors.registrationNumber?.message}</p> 
             <label htmlFor="emergency">Akut</label>
             <div className="radioButton">
-            <input id= "answer-ja" type="radio" value={true} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Ja
-            <input id= "answer-nej" type="radio" value={false} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Nej
+            <input id= "answer-ja" className = "radioElement" type="radio" value={true} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Ja
+            <input id= "answer-nej" className = "radioElement" type="radio" value={false} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Nej
             </div>
             <p>{errors.emergency?.message}</p>
             <label htmlFor="reportDescription">Fel</label>
