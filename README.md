@@ -27,8 +27,10 @@ Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag ä
 4. Kontakta leverantören
 5. Träffa projektledaren innan arbetet påbörjas
 
+
 1. Tydliggöra målet och syftet
 Innan jag börjar att bygga appen, behöver jag förstå vad appen ska användas till. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla  tankar och idéer. Sen listas tankar och planer grovt.
+
 
 2. Att veta krav och förväntningar
 Behöver veta konkreta behov och förväntningar från testpersonerna, både vad de vill ha och vad de inte vill ha.
