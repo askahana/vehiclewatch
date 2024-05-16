@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/vehiclewatch/static/css/main.ccc003d8.css",
+    "main.js": "/vehiclewatch/static/js/main.5a6e2955.js",
+    "static/js/453.7a54ff11.chunk.js": "/vehiclewatch/static/js/453.7a54ff11.chunk.js",
+    "index.html": "/vehiclewatch/index.html",
+    "main.ccc003d8.css.map": "/vehiclewatch/static/css/main.ccc003d8.css.map",
+    "main.5a6e2955.js.map": "/vehiclewatch/static/js/main.5a6e2955.js.map",
+    "453.7a54ff11.chunk.js.map": "/vehiclewatch/static/js/453.7a54ff11.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ccc003d8.css",
+    "static/js/main.5a6e2955.js"
+  ]
+}
