@@ -20,10 +20,9 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
+  min-width: 400px;
   max-width: 600px;
   min-height: 600px;
-  display: grid;
-  place-items: center;
 }
 
 h1 {
@@ -55,8 +54,7 @@ input, textarea {
   margin-bottom: 5px;
 }
 
-/*För errors*/
-
+/*För error meddelande*/
 p {
   color: #e3342f;
   margin: 0 0 15px;
@@ -98,7 +96,7 @@ p {
   font-size: 14px;
 }
 
-/*Funderade skaffa modal för att visa att man har rapportrat.*/
+/*Funderade skaffa modal för att visa att man har rapportrat. */
 #dialog{
   display: grid;
   place-items: center;

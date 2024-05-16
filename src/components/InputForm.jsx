@@ -36,6 +36,32 @@ const InputForm = () => {
     setCarNum(e.target.value);
     setVehicleStatus("");    
   }
+  // Det här är att ändra datum format till enklare format.
+  function changedateFormate(date){
+    return date.toString().split('T')[0];
+  }
+ // Funktion som returnerar array berående på status
+function getStatusMessage(status){
+  const messageInProgress = "Pågår";
+  const messageRepaired = "Repererat";
+  const messageCompleted = "Klart";
+  const messages = [messageInProgress, messageRepaired, messageCompleted];
+
+ return status.map(sta=>{
+    switch(sta){
+      case 0:
+        return messageInProgress;
+      case 1:
+        return messageRepaired;
+      case 2:
+        return messageCompleted;
+      default:
+        return "NA";
+    }
+  })
+  
+}
+
 
     // Hämta API för att visa rapporteringshistorik.
   useEffect(() =>{
@@ -50,11 +76,22 @@ try{
   if(Array.isArray(data)  && data.length > 0){
     data.forEach(report => {
       const descriptions = data.map(report => report.reportDescription);
-     const reportedDates = data.map(report => {const date = new Date(report.reportedDate)});
-  
-      console.log(descriptions);
-      const descritptionWithN =  descriptions.reverse().join("\n")
-      setVehicleStatus(descritptionWithN);
+      const reportedDates = data.map(report => report.reportedDate);
+      const status = data.map(report => report.reportStatus);
+     /* console.log(descriptions);
+      console.log(reportedDates);
+      console.log(status);*/
+      const statusMessage = getStatusMessage(status);
+      console.log(getStatusMessage(status));
+     
+      const descritptionReversed =  descriptions.reverse();
+      const datesWithNewLineReversed = reportedDates.reverse();
+      const changeddates = datesWithNewLineReversed.map(changedateFormate);
+      console.log(changeddates);
+
+      const combinedArray = changeddates.map((date, index) => `${date}: ${descriptions[index]}\t${statusMessage[index]}\n`);
+      const vehicleStatus =  combinedArray.join('\n');/*`${changeddates}${descritptionReversed}${statusMessage}`;*/
+      setVehicleStatus(vehicleStatus);
     })
   }else{
     console.log("Ingen info.");
@@ -95,7 +132,8 @@ try{
       }
     };
 
-  
+
+
   return (
     <div >
         <form onSubmit = {handleSubmit(onSubmit)}>
@@ -115,19 +153,13 @@ try{
             <label htmlFor="reportDescription">Fel</label>
             <textarea name="reportDescription" id="" placeholder="Ange text" {...register("reportDescription", {required: "Ange text"})}></textarea>
             <p>{errors.reportDescription?.message}</p>
-            
             <button type="submit" className="submitBtn">Submit</button>
             <p className="result">{resultMessage}</p>
             <label htmlFor="status">Historik</label>
-            {vehiclestatus?  /*(<p className="carstatus">{vehiclestatus}</p>):*/
-             (
-              vehiclestatus.split('\n').map((line, index) => (
-                <p key={index}>{line}</p>
-              ))
-            ) : ( <p className="carstatus"></p>)}
-        
-
-          
+            {vehiclestatus?  /*(<p className="carstatus">{vehiclestatus}</p>)*/
+            (vehiclestatus.split('\n').map((line, index) => (
+                <p className ="carstatus" key={index}>{line}</p>
+              )))  :( <p className="carstatus"></p>)}
         </form>
 
     </div>
