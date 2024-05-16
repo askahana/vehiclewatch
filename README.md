@@ -4,9 +4,9 @@
 Det här är en app som personalen på Varberg kommun kan använda för att rapportera fordonsfel, och rapportering går till bilavdelningen för att hantera fel och brister.
 
 Programmet utvecklades med
-*React (se main branch)
-*C# .Net 8.0 (se master branch)
-*Microsoft SQL
+・React (se main branch)
+・C# .Net 8.0 (se master branch)
+・Microsoft SQL
 
 Vad användare gör med appen:
 
@@ -16,7 +16,7 @@ Vad användare gör med appen:
 4. Kryssa in om felet är akut eller inte
 5. Skicka in rapport
 
-  Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer. Men AnvändarID behöver anges denna gång för att kunna kolla funktioner under utvecklingen.
+*Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer. Men AnvändarID behöver anges denna gång för att kunna kolla funktioner under utvecklingen.
 
 ## Planering
 Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del projektet på det befintliga systemet, skriver jag här som om jag redan har en god insikt och förståelse för det befintliga systemet.
