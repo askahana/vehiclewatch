@@ -45,7 +45,7 @@ Vad som behöver göras ska listas upp för att visualisera arbetet samt börja 
 - Backend: database 4 modeller, API endpoints för att hantera rapporter etc. 
 - Funktioner enligt svar från testpersoner
 	- ladda upp bild/ video
- 	- visa vilka fel har rapporterats
+ 	- visa vilka fel har rapporterats med datum
 	- textruta för att kunna beskriva fordonsfel. 
 	- simpel design. så få fält som måste fyllas i som möjligt.
 
