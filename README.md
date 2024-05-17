@@ -16,7 +16,7 @@ Vad användare gör med appen:
 4. Kryssa in om felet är akut eller inte
 5. Skicka in rapport
    
-<img src="https://github.com/askahana/vehiclewatch/assets/144675449/51eac684-d89f-46be-908a-5daeef648131)" alt="appImage" width="300">  
+<img src="https://github.com/askahana/vehiclewatch/assets/144675449/6f511895-53a6-44b7-9896-5e6e9bf62b06" alt="appImage" width="300">  
 
 *Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen.  
 
