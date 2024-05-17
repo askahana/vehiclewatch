@@ -4,14 +4,12 @@ import {useForm} from "react-hook-form"
 const InputForm = () => {
 
   const {register, handleSubmit,   formState: { errors },} = useForm({mode:"onSubmit"}); 
-  // För att visa ett meddelande om rappotern har lyuckats eller inte.
+  // För att visa ett meddelande om rappotern har lyckats eller inte.
   const [resultMessage, SetResultMessage] = useState("");
-// Den här används för att visa meddelande om fordon såsom historik etc.
+// Den här används för att visa olika meddelande, såsom historik etc.
   const [vehiclestatus, setVehicleStatus] = useState(null);
-
 // För att hämta användarens input på registrerings nummer.
   const [carNum, setCarNum] = useState("");
-
 
 // ändrar registreingnummer till vehicleID
   const fetchVehicleId = async (carNum) => {
@@ -36,7 +34,7 @@ const InputForm = () => {
     setCarNum(e.target.value);
     setVehicleStatus("");    
   }
-  // Det här är att ändra datum format till enklare format.
+  // Det här funktionen är för att ändra datum format.
   function changedateFormate(date){
     return date.toString().split('T')[0];
   }
@@ -89,8 +87,8 @@ try{
       const changeddates = datesWithNewLineReversed.map(changedateFormate);
       console.log(changeddates);
 
-      const combinedArray = changeddates.map((date, index) => `${date}: ${descriptions[index]}\t${statusMessage[index]}\n`);
-      const vehicleStatus =  combinedArray.join('\n');/*`${changeddates}${descritptionReversed}${statusMessage}`;*/
+      const combinedArray = changeddates.map((date, index) => `${date}: ${descriptions[index]}${statusMessage[index]}`);
+      const vehicleStatus =  combinedArray.join("\n");/*`${changeddates}${descritptionReversed}${statusMessage}`;*/
       setVehicleStatus(vehicleStatus);
     })
   }else{
@@ -146,8 +144,8 @@ try{
               <p>{errors.registrationNumber?.message}</p> 
             <label htmlFor="emergency">Akut</label>
             <div className="radioButton">
-            <input id= "answer-ja" className = "radioElement" type="radio" value={true} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Ja
-            <input id= "answer-nej" className = "radioElement" type="radio" value={false} name="emergency" {...register("emergency", {required: "Please choose", valueAsBoolean: true})}/>Nej
+            <input id= "answer-ja" className = "radioElement" type="radio" value={true} name="emergency" {...register("emergency", {required: "Vänligen välj", valueAsBoolean: true})}/>Ja
+            <input id= "answer-nej" className = "radioElement" type="radio" value={false} name="emergency" {...register("emergency", {required: "Vänligen välj", valueAsBoolean: true})}/>Nej
             </div>
             <p>{errors.emergency?.message}</p>
             <label htmlFor="reportDescription">Fel</label>
@@ -156,7 +154,7 @@ try{
             <button type="submit" className="submitBtn">Submit</button>
             <p className="result">{resultMessage}</p>
             <label htmlFor="status">Historik</label>
-            {vehiclestatus?  /*(<p className="carstatus">{vehiclestatus}</p>)*/
+            {vehiclestatus?  //(<p className="carstatus">{vehiclestatus}</p>)
             (vehiclestatus.split('\n').map((line, index) => (
                 <p className ="carstatus" key={index}>{line}</p>
               )))  :( <p className="carstatus"></p>)}
