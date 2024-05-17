@@ -21,7 +21,7 @@ Vad användare gör med appen:
 ## Planering(Uppgift 1)
 Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del av projektet på det befintliga systemet, har jag redan en god insikt och förståelse för det befintliga systemet.
      
-1. **Tydliggöra målet och syftet ** 
+1. **Tydliggöra målet och syftet**   
 Innan jag börjar att bygga appen, behöver jag förstå syftet med den. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla tankar och idéer. Sen listas tankar och planer grovt.  
 
 2. **Träffa testpersonerna för att veta krav och förväntningar**   
