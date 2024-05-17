@@ -18,11 +18,11 @@ Vad användare gör med appen:
 
 *Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen. Men AnvändarID behöver anges denna gång för att kunna kolla funktioner under utvecklingen.
 
-## Planering
+## Planering(Uppgift 1)
 Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del av projektet på det befintliga systemet, har jag redan en god insikt och förståelse för det befintliga systemet.
      
 1. Tydliggöra målet och syftet  
-Innan jag börjar att bygga appen, behöver jag förstå vad appen ska användas till. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla  tankar och idéer. Sen listas tankar och planer grovt.
+Innan jag börjar att bygga appen, behöver jag förstå vad appen ska användas till. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla  tankar och idéer. Sen listas tankar och planer grovt.  
 2. Träffa testpersonerna för att veta krav och förväntningar  
 Behöver veta konkreta behov och förväntningar från testpersonerna, både vad de vill ha och vad de inte vill ha.
 
@@ -51,8 +51,14 @@ Vad som behöver göras ska listas upp för att visualisera arbetet samt börja 
 4. Kontakta leverantören  
 Frågor till leverantören är för att kunna veta struktur och funktioner i systemet samt funderingar som dök upp under planeringen.
 
-- Om det finns API som är tillgänglig till nästa app.
-- Om det finns några tekniska punkter som jag borde vara medveten om.
+・Hur systemet kopplade med usersystem
+➣ hur man kopplar det med systemet.
+・Om det finns något som kan användas till nästa app, såsom API
+➣
+・Om det finns några tekniska punkter som jag borde vara medveten om
+
+・Vad jag borde vara medveten om när jag bygger mobil app, security? 
+
   
 5. Stämma av med projektledare innan arbetet påbörjas  
 Visa planen så här långt så att vi är överens om att jag är på rätt spår.
