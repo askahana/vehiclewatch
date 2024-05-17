@@ -6,7 +6,8 @@ Det här är en app som personalen på Varberg kommun kan använda för att rapp
 Programmet utvecklades med
 - React (se main branch)
 - C# .Net 8.0 (se master branch)
-- Microsoft SQL  
+- Microsoft SQL
+  
 *Vänligen kontrollera databasen på C# och API-addressen på React.
 
 Vad användare gör med appen:
