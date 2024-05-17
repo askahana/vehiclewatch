@@ -16,10 +16,10 @@ Vad användare gör med appen:
 4. Kryssa in om felet är akut eller inte
 5. Skicka in rapport
 
-*Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer. Men AnvändarID behöver anges denna gång för att kunna kolla funktioner under utvecklingen.
+*Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen. Men AnvändarID behöver anges denna gång för att kunna kolla funktioner under utvecklingen.
 
 ## Planering
-Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del projektet på det befintliga systemet, skriver jag här som om jag redan har en god insikt och förståelse för det befintliga systemet.
+Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del av projektet på det befintliga systemet, har jag redan en god insikt och förståelse för det befintliga systemet.
      
 1. Tydliggöra målet och syftet  
 Innan jag börjar att bygga appen, behöver jag förstå vad appen ska användas till. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla  tankar och idéer. Sen listas tankar och planer grovt.
@@ -28,13 +28,13 @@ Behöver veta konkreta behov och förväntningar från testpersonerna, både vad
 
 Nedan är frågor som ställdes till testpersonerna:
 - Vilka funktioner de vill ha och vad de vill inte ha  
-	För att veta vad som måste vara med, men också för att inte ha med onödiga funktioner.
+	För att veta vad som måste vara med, och för att inte ha med onödiga funktioner.
 - För och nackdelar med det befintliga systemet  
 	För att noggrannare hitta vilka funktioner som saknas, och för att se vad som redan fungerar bra.
 - Design/layout  
-	Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad tycker användaren är lättanvänt.
+	Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad användaren tycker är lättanvänt.
 - Hur mycket information de vill kunna se i historiken  
-	Avgöra vad som är lagom mycket information, så det inte blir onödigt mycket.
+	Att veta vad lagom mycket information är, så det inte blir onödigt mycket.
  
 3. Plan enligt svar från testpersoner/ Lista vad som behöver göras  
 
@@ -66,4 +66,7 @@ Några funktioner som ännu inte implementerats.
 - Ladda upp bild/video
 
 - Rapporteringshistorik
-Det visas vad användare skrev och sorteras inte innehållet. Det kan skrivs ut en jättelång text.
+Rapporteringhistorik skrivs ut som en lång text nu. Det skulle vara bra om det blir sorterad, identifierad med olika färger beroende på rapporteringsstatus.
+
+・Modal window
+Det skulle vara bra om rapportering klart meddelande skrivs ut med modal window.
