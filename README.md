@@ -21,10 +21,10 @@ Vad användare gör med appen:
 ## Planering(Uppgift 1)
 Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del av projektet på det befintliga systemet, har jag redan en god insikt och förståelse för det befintliga systemet.
      
-1. Tydliggöra målet och syftet  
+1. **Tydliggöra målet och syftet ** 
 Innan jag börjar att bygga appen, behöver jag förstå syftet med den. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla tankar och idéer. Sen listas tankar och planer grovt.  
 
-2. Träffa testpersonerna för att veta krav och förväntningar  
+2. **Träffa testpersonerna för att veta krav och förväntningar**   
 Behöver veta konkreta behov och förväntningar från testpersonerna, både vad de vill ha och vad de inte vill ha.
 
 Nedan är frågor som ställdes till testpersonerna:
@@ -37,7 +37,7 @@ Nedan är frågor som ställdes till testpersonerna:
 - Hur mycket information de vill kunna se i historiken  
 	➣För att veta lagom mycket information, så det inte blir onödigt mycket.
  
-3. Plan enligt svar från testpersoner
+3. **Plan enligt svar från testpersoner**
 
 Vad som behöver göras ska listas upp för att visualisera arbetet samt börja fundera och designa funktioner och struktur. 
 
@@ -49,7 +49,7 @@ Vad som behöver göras ska listas upp för att visualisera arbetet samt börja 
 	- textruta för att kunna beskriva fordonsfel. 
 	- simpel design. så få fält som måste fyllas i som möjligt.
 
-4. Kontakta leverantören  
+4. **Kontakta leverantören**  
 Tekniska frågor för att kunna veta struktur och funktioner i systemet samt funderingar som dök upp under planeringen ska ställas.
 	
 - Kopplingar mellan olika delsystem
@@ -58,7 +58,7 @@ Tekniska frågor för att kunna veta struktur och funktioner i systemet samt fun
 - Om det finns några tekniska punkter som jag borde vara medveten om
 - Vad jag borde vara medveten om när jag bygger app, hantera säkerhet.  
 
-5. Stämma av med projektledare innan arbetet påbörjas  
+5. **Stämma av med projektledare innan arbetet påbörjas**  
 Visa planen så här långt så att vi är överens om att jag är på rätt spår.
 
 
