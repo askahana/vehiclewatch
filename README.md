@@ -16,13 +16,14 @@ Vad användare gör med appen:
 4. Kryssa in om felet är akut eller inte
 5. Skicka in rapport
 
-*Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen. Men AnvändarID behöver anges denna gång för att kunna kolla funktioner under utvecklingen.
+*Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen.  
 
 ## Planering(Uppgift 1)
 Här redogör jag hur jag ska få en bild av vad som ska göras. Eftersom jag är en del av projektet på det befintliga systemet, har jag redan en god insikt och förståelse för det befintliga systemet.
      
 1. Tydliggöra målet och syftet  
-Innan jag börjar att bygga appen, behöver jag förstå vad appen ska användas till. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla  tankar och idéer. Sen listas tankar och planer grovt.  
+Innan jag börjar att bygga appen, behöver jag förstå syftet med den. Så för att kunna få en översiktlig bild, vill jag läsa dokumentation om det befintliga systemet och testa det själv också för att kunna samla tankar och idéer. Sen listas tankar och planer grovt.  
+
 2. Träffa testpersonerna för att veta krav och förväntningar  
 Behöver veta konkreta behov och förväntningar från testpersonerna, både vad de vill ha och vad de inte vill ha.
 
@@ -34,32 +35,29 @@ Nedan är frågor som ställdes till testpersonerna:
 - Design/layout  
 	➣Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad användaren tycker är lättanvänt.
 - Hur mycket information de vill kunna se i historiken  
-	➣Att veta vad lagom mycket information är, så det inte blir onödigt mycket.
+	➣För att veta lagom mycket information, så det inte blir onödigt mycket.
  
-3. Plan enligt svar från testpersoner/ Lista vad som behöver göras  
+3. Plan enligt svar från testpersoner
 
 Vad som behöver göras ska listas upp för att visualisera arbetet samt börja fundera och designa funktioner och struktur. 
 
-- Frontend: Form behöver användas, input, radiobutton etc.
-- Backend: database 4 modeller etc. 
+- Frontend: Formulär, input, radiobutton etc.
+- Backend: database 4 modeller, API endpoints för att hantera rapporter. 
 - Funktioner enligt svar från testpersoner
 	- ladda upp bild/ video
- 	- Visa vilka fel har rapporterats
-	- Textruta för att kunna beskriva fordonsfel. 
-	- Simpel design. Så få fält som måste fyllas i som möjligt. Inlogg etc.
+ 	- visa vilka fel har rapporterats
+	- textruta för att kunna beskriva fordonsfel. 
+	- simpel design. så få fält som måste fyllas i som möjligt.
 
 4. Kontakta leverantören  
-Frågor till leverantören är för att kunna veta struktur och funktioner i systemet samt funderingar som dök upp under planeringen.
+Tekniska frågor för att kunna veta struktur och funktioner i systemet samt funderingar som dök upp under planeringen ska ställas.
+	
+- Kopplingar mellan olika delsystem
+ ➣ Ta reda på nödvändig info om system/databaser för att möjliggöra automatisk inloggning.
+- Om det finns något som kan användas till appen, såsom API
+- Om det finns några tekniska punkter som jag borde vara medveten om
+- Vad jag borde vara medveten om när jag bygger app, hantera säkerhet.  
 
-・Hur systemet kopplade med usersystem
-➣ hur man kopplar det med systemet.
-・Om det finns något som kan användas till nästa app, såsom API
-➣
-・Om det finns några tekniska punkter som jag borde vara medveten om
-
-・Vad jag borde vara medveten om när jag bygger mobil app, security? 
-
-  
 5. Stämma av med projektledare innan arbetet påbörjas  
 Visa planen så här långt så att vi är överens om att jag är på rätt spår.
 
@@ -69,8 +67,6 @@ Några funktioner som ännu inte implementerats.
 
 - Ladda upp bild/video
 
-- Rapporteringshistorik
-Rapporteringhistorik skrivs ut som en lång text nu. Det skulle vara bra om det blir sorterad, identifierad med olika färger beroende på rapporteringsstatus.
+- Rapporteringhistorik skrivs ut som en lång text nu. Det skulle vara bra om det blir sorterad, identifierad med olika färger beroende på rapporteringsstatus.
 
-・Modal window
-Det skulle vara bra om rapportering klart meddelande skrivs ut med modal window.
+- Modal window för att visa meddelade om rapporteringen är klar. Och meddelade borde variera när det inte gick, såsom fel med registreringsnummer etc.
