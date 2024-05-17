@@ -38,21 +38,16 @@ Nedan är frågor som ställdes till testpersonerna:
  
 3. Plan enligt svar från testpersoner/ Lista vad som behöver göras  
 
-- Funktion att ladda upp bild/video
-- Visa vilka fel har rapporterats tidigare för att kunna slippa rapportera samma fel igen.
-- Textruta för att kunna beskriva problemet i fritext.
-- Designen ska vara simpel. Så få fält som måste fyllas i som möjligt. Inlogg etc.
-- bygga backend på C#, Database
- 	3 models
-	Report
-	ReportStatus
-	Vehicle  
-- bygga frontend på React: Form behöver användas  
-  	- Registeringsnummer, input
-  	- Status, input
-  	- Ladda upp bild
-  	- Akut ja/nej, radio button
-  	- Submit-button  
+Vad som behöver göras ska listas upp för att visualisera arbetet samt börja fundera och designa funktioner och struktur. 
+
+- Frontend: Form behöver användas, input, radiobutton etc.
+- Backend: database 4 modeller etc. 
+- Funktioner enligt svar från testpersoner
+	- ladda upp bild/ video
+ 	- Visa vilka fel har rapporterats
+	- Textruta för att kunna beskriva fordonsfel. 
+	- Simpel design. Så få fält som måste fyllas i som möjligt. Inlogg etc.
+
 4. Kontakta leverantören  
 Frågor till leverantören är för att kunna veta struktur och funktioner i appen. Vilket språk/API/platform används, 
 
