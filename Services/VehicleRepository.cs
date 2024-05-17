@@ -10,7 +10,6 @@ namespace VehicleWatch.Services
         {
             _context = context;
         }
-
         public async Task<int> GetVehicleId(string RegistrationNumber)
         {
             var vehicle = await _context.Vehicles

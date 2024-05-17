@@ -48,7 +48,6 @@ namespace VehicleWatch.Controllers
             }
         }
 
-
         [HttpGet("reportId")]
         public async Task<ActionResult<Report>> GetSingel(int reportId)
         {
@@ -86,10 +85,30 @@ namespace VehicleWatch.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError,
                   "Error to create data in the Database.");
             }
-        }
 
+        }
+        /*
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<Report>> DeletReport(int id)
+        {
+            try
+            {
+                var reportToDelete = await _repo.GetSingel(id);
+                if(reportToDelete == null)
+                {
+                    return NotFound($"Report with ID {id} was not found.");
+                }
+                return await _repo.Delete(id);
+            }
+            catch (Exception)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                       "Error to delete data from Database.");
+            }
+        }
+        */
 
 
     }
-    
+
 }
