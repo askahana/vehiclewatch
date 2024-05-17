@@ -42,7 +42,7 @@ Nedan är frågor som ställdes till testpersonerna:
 Vad som behöver göras ska listas upp för att visualisera arbetet samt börja fundera och designa funktioner och struktur. 
 
 - Frontend: Formulär, input, radiobutton etc.
-- Backend: database 4 modeller, API endpoints för att hantera rapporter. 
+- Backend: database 4 modeller, API endpoints för att hantera rapporter etc. 
 - Funktioner enligt svar från testpersoner
 	- ladda upp bild/ video
  	- visa vilka fel har rapporterats
