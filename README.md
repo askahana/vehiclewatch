@@ -1,4 +1,4 @@
-# Dokumentation 🚙Fordon rapp
+# 🚙Fordon rapp
 
 ## Om appen
 Det här är en app som personalen på Varberg kommun kan använda för att rapportera fordonsfel, och rapportering går till bilavdelningen för att hantera fel och brister.
@@ -16,6 +16,7 @@ Vad användare gör med appen:
 4. Kryssa in om felet är akut eller inte
 5. Skicka in rapport
 
+![image](https://github.com/askahana/vehiclewatch/assets/144675449/a6a927a8-0511-4c04-9f5f-999b2954ef39)
 *Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen.  
 
 ## Planering(Uppgift 1)
