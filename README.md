@@ -29,13 +29,13 @@ Behöver veta konkreta behov och förväntningar från testpersonerna, både vad
 
 Nedan är frågor som ställdes till testpersonerna:
 - Vilka funktioner de vill ha och vad de vill inte ha  
-	➣För att veta vad som måste vara med, och för att inte ha med onödiga funktioner.
+	➣ För att veta vad som måste vara med, och för att inte ha med onödiga funktioner.
 - För och nackdelar med det befintliga systemet  
-	➣För att noggrannare hitta vilka funktioner som saknas, och för att se vad som redan fungerar bra.
+	➣ För att noggrannare hitta vilka funktioner som saknas, och för att se vad som redan fungerar bra.
 - Design/layout  
-	➣Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad användaren tycker är lättanvänt.
+	➣ Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad användaren tycker är lättanvänt.
 - Hur mycket information de vill kunna se i historiken  
-	➣För att veta lagom mycket information, så det inte blir onödigt mycket.
+	➣ För att veta lagom mycket information, så det inte blir onödigt mycket.
  
 3. **Plan enligt svar från testpersoner**
 
