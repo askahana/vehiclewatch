@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/vehiclewatch/static/css/main.7fef1341.css",
+    "main.css": "/vehiclewatch/static/css/main.9f1140aa.css",
     "main.js": "/vehiclewatch/static/js/main.6d660376.js",
     "static/js/453.7a54ff11.chunk.js": "/vehiclewatch/static/js/453.7a54ff11.chunk.js",
     "index.html": "/vehiclewatch/index.html",
-    "main.7fef1341.css.map": "/vehiclewatch/static/css/main.7fef1341.css.map",
+    "main.9f1140aa.css.map": "/vehiclewatch/static/css/main.9f1140aa.css.map",
     "main.6d660376.js.map": "/vehiclewatch/static/js/main.6d660376.js.map",
     "453.7a54ff11.chunk.js.map": "/vehiclewatch/static/js/453.7a54ff11.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7fef1341.css",
+    "static/css/main.9f1140aa.css",
     "static/js/main.6d660376.js"
   ]
 }
