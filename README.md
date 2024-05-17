@@ -28,13 +28,13 @@ Behöver veta konkreta behov och förväntningar från testpersonerna, både vad
 
 Nedan är frågor som ställdes till testpersonerna:
 - Vilka funktioner de vill ha och vad de vill inte ha  
-	För att veta vad som måste vara med, och för att inte ha med onödiga funktioner.
+	➣För att veta vad som måste vara med, och för att inte ha med onödiga funktioner.
 - För och nackdelar med det befintliga systemet  
-	För att noggrannare hitta vilka funktioner som saknas, och för att se vad som redan fungerar bra.
+	➣För att noggrannare hitta vilka funktioner som saknas, och för att se vad som redan fungerar bra.
 - Design/layout  
-	Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad användaren tycker är lättanvänt.
+	➣Såsom om de vill ha knappar som man kan välja problem/orsak eller svara i textruta etc. Vad användaren tycker är lättanvänt.
 - Hur mycket information de vill kunna se i historiken  
-	Att veta vad lagom mycket information är, så det inte blir onödigt mycket.
+	➣Att veta vad lagom mycket information är, så det inte blir onödigt mycket.
  
 3. Plan enligt svar från testpersoner/ Lista vad som behöver göras  
 
@@ -49,8 +49,11 @@ Vad som behöver göras ska listas upp för att visualisera arbetet samt börja 
 	- Simpel design. Så få fält som måste fyllas i som möjligt. Inlogg etc.
 
 4. Kontakta leverantören  
-Frågor till leverantören är för att kunna veta struktur och funktioner i appen. Vilket språk/API/platform används, 
+Frågor till leverantören är för att kunna veta struktur och funktioner i systemet samt funderingar som dök upp under planeringen.
 
+- Om det finns API som är tillgänglig till nästa app.
+- Om det finns några tekniska punkter som jag borde vara medveten om.
+  
 5. Stämma av med projektledare innan arbetet påbörjas  
 Visa planen så här långt så att vi är överens om att jag är på rätt spår.
 
