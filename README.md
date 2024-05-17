@@ -15,7 +15,8 @@ Vad användare gör med appen:
 3. Beskriva fordonsfel i textruta
 4. Kryssa in om felet är akut eller inte
 5. Skicka in rapport
-![image width="200"](https://github.com/askahana/vehiclewatch/assets/144675449/a6a927a8-0511-4c04-9f5f-999b2954ef39)  
+   
+<img src="https://github.com/askahana/vehiclewatch/assets/144675449/a6a927a8-0511-4c04-9f5f-999b2954ef39" alt="Vehicle Image" width="300" height="200">
 *Användare blir inloggade automatiskt när hen öppnar appen med jobbmobilen och systemet kan veta vem som har rapporterat. Så användaren behöver bara ange registreringsnummer egentligen.  
 
 ## Planering(Uppgift 1)
