@@ -59,8 +59,6 @@ function getStatusMessage(status){
   })
   
 }
-
-
     // Hämta API för att visa rapporteringshistorik.
   useEffect(() =>{
     const fetchData = async () => {
@@ -130,8 +128,6 @@ try{
       }
     };
 
-
-
   return (
     <div >
         <form onSubmit = {handleSubmit(onSubmit)}>
@@ -154,7 +150,7 @@ try{
             <button type="submit" className="submitBtn">Submit</button>
             <p className="result">{resultMessage}</p>
             <label htmlFor="status">Historik</label>
-            {vehiclestatus?  //(<p className="carstatus">{vehiclestatus}</p>)
+            {vehiclestatus?  
             (vehiclestatus.split('\n').map((line, index) => (
                 <p className ="carstatus" key={index}>{line}</p>
               )))  :( <p className="carstatus"></p>)}
