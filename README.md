@@ -1,7 +1,7 @@
 # Fordon rapp🚙
 
 ## Om appen
-Det här är en app som personalen på Varberg kommun kan använda för att rapportera fordonsfel, och rapportering går till bilavdelningen för att hantera fel och brister.
+Det här är en app som personalen på Varberg kommun kan använda för att rapportera fordonsfel. Appen ansluter till bilavdelningens system som redan finns på plats för att hantera fel och brister.
 
 Programmet utvecklades med
 - React (se main branch)
